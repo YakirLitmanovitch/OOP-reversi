@@ -51,4 +51,9 @@ public class Position {
         Position pos = (Position) p;
         return this.col == pos.col() && this.row == pos.row();
     }
+    @Override
+    public int hashCode() {
+        return Objects.hash(row,col);
+
+    }
 }
